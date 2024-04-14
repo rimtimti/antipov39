@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="flex_center">
+            <button class="button">
+                <a href="{% url "main:index" %}">Back</a>
+            </button>
+        </div>
+        <div class="flex_center">
+            <form class="card" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                <h3 class="text">{{ field.label_tag }}</h3>
+                <p class="text">{{ field }}</p>
+                {% endfor %}
+                <div>
+                    <input type="submit" class="button" value="Сделать запрос">
+                </div>
+            </form>
+        </div>
+{% endblock %}

@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: #b3d615;
 }
 
 li {
@@ -31,4 +32,28 @@ body {
     font-weight: 400;
     border-style: none;
     background-color: #A0006D;
+}
+
+.button:hover {
+    color: #FFF;
+    background-color: #5a319d;
+}
+
+.text {
+    color: rgb(26, 25, 22);
+}
+
+.card {
+    width: 360px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register {
+    background-color: #659DBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }

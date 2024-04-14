@@ -3,17 +3,17 @@
 {% block content %}
         <div class="flex_center">
             <button class="button">
-                <a href="{% url "main:ping" %}">Ping</a>
+                <a href="{% url "main:index" %}">Back</a>
             </button>
         </div>
         <div class="flex_center">
             <button class="button">
-                <a href="{% url "main:query" %}">Query</a>
+                <a href="{% url "main:result" %}">All history</a>
             </button>
         </div>
         <div class="flex_center">
             <button class="button">
-                <a href="{% url "main:history" %}">History</a>
+                <a href="{% url "main:history_of_number" %}">History of number</a>
             </button>
         </div>
 {% endblock %}

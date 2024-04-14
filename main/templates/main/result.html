@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="flex_center">
+            <button class="button">
+                <a href="{% url "main:index" %}">Back</a>
+            </button>
+        </div>
+                {% for item in query_items %}
+                        <p class="text">Кадастровый номер: {{ item.cadastral_number }} - Широта: {{ item.latitude }} - Долгота: {{ item.longitude }} - Результат запроса: {{ item.result }}</p>
+                {% endfor %}
+{% endblock %}

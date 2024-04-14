@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="flex_center">
+            <button class="button">
+                <a href="{% url "main:index" %}">Back</a>
+            </button>
+        </div>
+        <div class="flex_center">
+            <h1>{{ text }}</h1>
+        </div>
+{% endblock %}
