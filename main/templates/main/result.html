@@ -7,6 +7,6 @@
             </button>
         </div>
                 {% for item in query_items %}
-                        <p class="text">Кадастровый номер: {{ item.cadastral_number }} - Широта: {{ item.latitude }} - Долгота: {{ item.longitude }} - Результат запроса: {{ item.result }}</p>
+                        <p class="text">{{ item }}</p>
                 {% endfor %}
 {% endblock %}
